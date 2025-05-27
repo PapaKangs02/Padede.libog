@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NICHI PATINGIN DEDE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 300px; /* Adjust image size as needed */
+            height: auto;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="KangsFlex.png" alt="A funny picture">
+
+    <h1>PRE, PWEDE BA AKO DUMEDE?</h1>
+
+    <button onclick="respond('yes')">Yes</button>
+    <button onclick="respond('no')">No</button>
+
+    <p id="response"></p>
+
+    <script>
+        function respond(answer) {
+            const responseElement = document.getElementById('response');
+            if (answer === 'yes') {
+                responseElement.textContent = 'YAAAAY!';
+                responseElement.style.color = 'green';
+            } else {
+                responseElement.textContent = 'WAA! WAA! :<';
+                responseElement.style.color = 'red';
+            }
+        }
+    </script>
+
+</body>
+</html>
